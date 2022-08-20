@@ -6,6 +6,7 @@ use App\Http\Controllers\aboutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +23,11 @@ Route::controller(DashboardController::class)->group(function () {
      Route::get('/product', 'produk');
      Route::get('/portfolio', 'porto');
      Route::get('/about', 'tentang');
+});
+
+Route::controller(LoginController::class)->group(function () {
+
+    Route::get('/login', 'index');
+    Route::get('/register', 'daftar');
+
 });
