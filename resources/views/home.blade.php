@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('zidancode')
 <section class="jumbotron text-center">
-    <img src="img/logoz.png" alt="Zhafir Zidan" width="300" class="rounded mb-3" />
+    <img src="/img/logoz.png" alt="Zhafir Zidan" width="300" class="rounded mb-3" />
     <p class="lead">Zhafir Zidan</p>
     <p>High IQ & High Intellegence Humanity, All Hail Zhafir Zidan!!!</p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
