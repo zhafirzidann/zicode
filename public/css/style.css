@@ -1,0 +1,31 @@
+.jumbotron {
+  padding-top: 7rem;
+  background-color: black;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.lingkaran {
+  border-radius: 50%;
+}
+.navbar {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.container h2 {
+  color: black;
+}
+
+#gallery {
+  background-color: black;
+  color: rgb(0, 0, 0);
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
