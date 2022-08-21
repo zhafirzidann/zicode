@@ -27,7 +27,9 @@ Route::controller(DashboardController::class)->group(function () {
 
 Route::controller(LoginController::class)->group(function () {
 
-    Route::get('/login', 'index');
-    Route::get('/register', 'daftar');
-
+    Route::get('/login', 'index')->middleware('guest');
+    Route::get('/register', 'daftar')->middleware('guest');
+    Route::post('/login', 'authenticate')->middleware('guest');
+    Route::post('/register', 'store')->middleware('guest');
+    Route::post('/logout','logout')->middleware('auth');
 });

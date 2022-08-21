@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+    @include('sweetalert::alert')
   <!-- This example requires Tailwind CSS v2.0+ -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
@@ -27,6 +27,14 @@
           <a class="nav-link" href="/product">Product</a>
           <a class="nav-link" href="/portfolio">Portfolio</a>
           <a class="nav-link" href="/about">About</a>
+          @auth
+          <form id="logout" method="post" action="/logout">
+            @csrf
+            <a href="#" class="nav-link" onclick="document.getElementById('logout').submit()">Logout</a>
+          </form>
+          @else
+          <a class="nav-link" href="/login">Login</a>
+          @endauth
         </div>
       </div>
     </div>
@@ -36,6 +44,10 @@
   <div class="container-s">
     @yield('zidancode')
   </div>
+
+  <noscript>
+    <input type="submit" value="Submit form!" />
+  </noscript>
 
 </body>
 
