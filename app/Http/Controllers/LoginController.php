@@ -31,7 +31,7 @@ class LoginController extends Controller
 
         User::create($validator);
 
-        Alert::success('Account Success Created')->background('#000000')->showConfirmButton('Ok', '#00FFC2')->autoClose(5000);
+        Alert::success('Account Success Created')->background('#000000')->showConfirmButton('<strong style="color: #000000;">OK</strong>', '#00FFC2')->autoClose(5000);
 
         return redirect('/login');
 
