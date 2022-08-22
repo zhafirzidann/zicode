@@ -31,7 +31,7 @@ class LoginController extends Controller
 
         User::create($validator);
 
-        Alert::success('Account Success Created');
+        Alert::success('Account Success Created')->background('#000000')->showConfirmButton('Ok', '#00FFC2')->autoClose(5000);
 
         return redirect('/login');
 
@@ -47,12 +47,12 @@ class LoginController extends Controller
         if (Auth::attempt($validator)) {
             $request->session()->regenerate();
 
-            Alert::success('Login Success');
+            Alert::success('<span style="color: white;">Login Success</span>')->background('#000000')->showConfirmButton('Ok', '#00FFC2')->autoClose(5000);
 
             return redirect()->intended('/');
         }
 
-        Alert::error('Username or Password Wrong');
+        Alert::error('<span style="color: white;">Username or Password Wrong</span>')->background('#000000')->showConfirmButton('Ok', '#00FFC2')->autoClose(5000);
 
 
         return back();
@@ -67,7 +67,7 @@ class LoginController extends Controller
 
         $request->session()->regenerateToken();
 
-        Alert::success('Logout Success');
+        Alert::success('<span style="color: white;">Logout Success</span>')->background('#000000')->showConfirmButton('Ok', '#00FFC2')->autoClose(5000);
 
         return redirect('/login');
     }
