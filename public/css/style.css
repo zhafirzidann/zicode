@@ -1,8 +1,5 @@
-.jumbotron {
-  padding-top: 7rem;
-  background-color: black;
-  color: white;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.background {
+  background color: black;
 }
 .lingkaran {
   border-radius: 50%;

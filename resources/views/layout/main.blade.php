@@ -13,11 +13,17 @@
 </head>
 
 <body>
-    @include('sweetalert::alert')
+  @include('sweetalert::alert')
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparant">
     <div class="container">
-      <a class="navbar-brand fs-3 fw-bolder" href="#">BANTAI GIT</a>
+      <img src="/img/logoz.png" alt="" width="70">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
